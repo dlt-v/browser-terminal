@@ -50,6 +50,9 @@ body {
     width: 100%;
     height: 100%;
 }
+.scanlines:hover {
+    cursor: none;
+}
 .line {
     color: #039dfc;
     line-height: normal;

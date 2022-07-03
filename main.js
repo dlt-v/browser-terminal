@@ -24,7 +24,12 @@ const sfx = {
         src: ['audio/click5.mp3'],
         volume: 0.5,
     }),
+    boop: new Howl({
+        src: ['audio/boop.mp3'],
+        volume: 0.5,
+    }),
 };
+
 const clicks = [sfx.click, sfx.click2, sfx.click3, sfx.click4, sfx.click5];
 input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
@@ -32,8 +37,6 @@ input.addEventListener('keypress', (e) => {
         generateText(input.value, sampleText);
         input.value = '';
     }
-    // click_id = Math.floor(Math.random() * 5);
-    // clicks[click_id].play();
 });
 
 overlay.addEventListener('click', () => {
@@ -77,6 +80,7 @@ const lineByLine = async (element, text) => {
         element.innerHTML += text[i];
         await sleep(50);
     }
+    sfx.boop.play();
     input.style.opacity = '1';
     lineInput.classList.add('line-input-before');
 };
