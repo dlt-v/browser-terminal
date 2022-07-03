@@ -7,23 +7,14 @@
         <title>Browser Terminal</title>
         <link rel="stylesheet" href="style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+        <script defer src="functions.js"></script>
         <script src="main.js" defer></script>
     </head>
     <body>
         <div class="terminal">
             <img src="images/scanlines.png" class="scanlines noselect" />
             <div class="line-container">
-                <div class="line">
-                    Microsoft Windows [Version 10.0.19044.1766]
-                </div>
-                <div class="line">
-                    (c) Microsoft Corporation. All rights reserved.
-                </div>
-                <div class="line"></div>
-                <div class="line">
-                    G:\dev>git clone
-                    https://github.com/dlt-v/browser-terminal.git
-                </div>
+                <div class="line">Press [ENTER] to initialize...</div>
             </div>
             <div class="line-input line-input-before">
                 <input
@@ -32,13 +23,6 @@
                     maxlength="60"
                     spellcheck="false"
                 />
-                <!-- <textarea
-                    class="input"
-                    cols="80"
-                    rows="1"
-                    maxlength="60"
-                    spellcheck="false"
-                ></textarea> -->
             </div>
         </div>
     </body>

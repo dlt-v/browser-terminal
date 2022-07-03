@@ -4,9 +4,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'VT323', monospace;
-    color: #039dfc;
+    color: #ffc000;
     font-size: 24px;
-    text-shadow: 0 0 3px #039dfc, 0 0 20px #039dfc, 0 0 40px #039dfc;
+    text-shadow: 0 0 3px #ffc000, 0 0 20px #ffc000, 0 0 40px #ffc000;
 }
 *::selection {
     background-color: rgba(0, 0, 0, 0);
@@ -35,7 +35,7 @@ body {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     max-width: 1200px;
     min-width: 800px;
     min-height: 800px;
@@ -54,7 +54,7 @@ body {
     cursor: none;
 }
 .line {
-    color: #039dfc;
+    color: #ffc000;
     line-height: normal;
     min-height: 24px;
 }
@@ -64,8 +64,8 @@ body {
     margin-top: -40px;
 }
 .line-input-before::before {
-    content: 'G:\\dev>';
-    color: #039dfc;
+    content: '>';
+    color: #ffc000;
 }
 .input {
     all: unset;
