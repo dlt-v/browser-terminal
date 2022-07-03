@@ -55,7 +55,7 @@ body {
     overflow: visible;
     margin-top: -40px;
 }
-.line-input::before {
+.line-input-before::before {
     content: 'G:\\dev>';
     color: #039dfc;
 }
