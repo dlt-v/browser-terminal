@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    color: #039dfc;
+    font-size: 24px;
+    text-shadow: 0 0 3px #039dfc, 0 0 20px #039dfc, 0 0 40px #039dfc;
+}
+*::selection {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: 0 0 3px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+body {
+    background-color: #000;
+    padding: 40px;
+}
+.terminal {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    min-width: 800px;
+    min-height: 800px;
+    /*Optional transform but adds some atmosphere*/
+    transform: rotate(-8deg) translate(-11px, -4px) skew(-5deg, 8deg);
+}
+.scanlines {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+.line {
+    color: #039dfc;
+    line-height: normal;
+    min-height: 24px;
+}
+.line-input {
+    /* transform: translateY(-33px); */
+    overflow: visible;
+    margin-top: -40px;
+}
+.line-input::before {
+    content: 'G:\\dev>';
+    color: #039dfc;
+}
+.input {
+    all: unset;
+    line-height: 104px;
+    text-indent: 40px;
+    margin-left: -50px;
+    overflow: visible;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 650px;
+}
